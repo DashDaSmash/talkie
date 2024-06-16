@@ -56,8 +56,9 @@ class _SpeechScreenState extends State<SpeechScreen>
                 children: [
                   FloatingActionButton(
                     onPressed: _listen,
-                    child: Icon(_isListening ? Icons.mic : Icons.mic_off,
-                        size: 40),
+                    child: Icon(_isListening ? Icons.mic : Icons.refresh_sharp,
+                        size: 40,
+                        color: _isListening ? Colors.red : Colors.deepPurple),
                     heroTag: "micButton",
                   ),
                   SizedBox(width: 20),
@@ -107,7 +108,7 @@ class _SpeechScreenState extends State<SpeechScreen>
             _text = val.recognizedWords;
             print("yapping is being printed");
           }),
-          listenFor: Duration(minutes: 1),
+          //listenFor: Duration(minutes: 1),
         );
       }
     } else {
