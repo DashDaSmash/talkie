@@ -1,16 +1,7 @@
 # talkie
 
-A new Flutter project.
+Revolutionizing the note taking....
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+designed to redefine the way we capture and process spoken information. Utilizing the power of Gemini AI APIs, our app accurately converts speech to text in real-time. It doesn’t stop there; it further processes the text to extract concise summaries, key points, and actionable assignments. This feature-rich tool is engineered to support professionals and students in managing information overload efficiently, making it an indispensable asset for anyone looking to enhance productivity and focus on what truly matters
