@@ -12,7 +12,7 @@ class SpeechScreen extends StatefulWidget {
 class _SpeechScreenState extends State<SpeechScreen>
     with SingleTickerProviderStateMixin {
   stt.SpeechToText _speech = stt.SpeechToText();
-  bool _isListening = true;
+  bool _isListening = false;
   String _text = '';
 
   @override
@@ -20,6 +20,7 @@ class _SpeechScreenState extends State<SpeechScreen>
     super.initState();
     _speech = stt.SpeechToText();
     print("We're listening from now on");
+    _listen();
   }
 
   @override
