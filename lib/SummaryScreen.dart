@@ -36,7 +36,7 @@ class _SummaryScreenState extends State<SummaryScreen> {
     final keyPointResponse = await widget.model.generateContent(content);
     keyPointText = keyPointResponse.text ?? '';
     print(keyPointText);
-    return keyPointText ?? '';
+    return keyPointText;
   }
 
   Future<String> _assignments() async {
@@ -46,7 +46,7 @@ class _SummaryScreenState extends State<SummaryScreen> {
     final assignmentsResponse = await widget.model.generateContent(content);
     assignmentsText = assignmentsResponse.text ?? '';
     print(assignmentsText);
-    return assignmentsText ?? '';
+    return assignmentsText;
   }
 
   @override
