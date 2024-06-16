@@ -12,13 +12,14 @@ class SpeechScreen extends StatefulWidget {
 class _SpeechScreenState extends State<SpeechScreen>
     with SingleTickerProviderStateMixin {
   stt.SpeechToText _speech = stt.SpeechToText();
-  bool _isListening = false;
+  bool _isListening = true;
   String _text = '';
 
   @override
   void initState() {
     super.initState();
     _speech = stt.SpeechToText();
+    print("We're listening from now on");
   }
 
   @override
@@ -94,7 +95,7 @@ class _SpeechScreenState extends State<SpeechScreen>
 
   void _listen() async {
     if (!_isListening) {
-      print("wasn't listening");
+      //print("wasn't listening");
       bool available = await _speech.initialize(
         onStatus: (val) => setState(() => _isListening = val == 'listening'),
       );
