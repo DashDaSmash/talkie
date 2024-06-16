@@ -106,6 +106,7 @@ class _SpeechScreenState extends State<SpeechScreen>
             _text = val.recognizedWords;
             print("yapping is being printed");
           }),
+          listenFor: Duration(minutes: 1),
         );
       }
     } else {
